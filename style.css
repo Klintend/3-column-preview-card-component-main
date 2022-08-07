@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
 *{
  padding: 0;
  margin: 0;
@@ -16,24 +18,27 @@
  margin: 0 auto;
  display: flex;
  flex-direction: row;
- border: 1px solid red;
+ border-radius: 0.5em;
+ /* border: 1px solid red; */
 }
 
 .context{
  display: flex;
  flex-direction: row;
- border: 1px solid palevioletred;
 }
 
 h1{
  text-transform: uppercase;
  color: hsl(0, 0%, 95%);
- border: 1px solid darkorange;
+ font-family: 'Big Shoulders Display', cursive;
 }
 
 p{
- font-size: 0.9375rem;
- width: 90%;
+ font-size: 0.9rem;
+ line-height: 23px;
+ font-weight: 400;
+ color: hsl(0, 0%, 95%);
+  font-family: 'Lexend Deca', sans-serif;
 }
 
 .col{
@@ -43,34 +48,53 @@ p{
 
 }
 
+
 .text-content{
 display: flex;
 flex-direction: column;
 justify-content: space-between;
- margin: 2em;
+ margin: 2.1em;
 gap: 5.5em;
- border: 1px solid darkcyan;
 }
 
 .btn{
- padding: 0.9em 0.3em;
- width: 60%;
+ padding: 1em;
+ width: 58%;
  border-radius: 1.5em;
  text-transform: capitalize;
  border: none;
  background-color: hsl(0, 0%, 95%);
+  font-family: 'Lexend Deca', sans-serif;
 }
 
 .col1{
  color: hsl(31, 77%, 52%);
 }
+.col1:hover{
+ border: 2px solid hsl(0, 0%, 95%);
+ cursor: pointer;
+ background-color: hsl(31, 77%, 52%);
+ color: hsl(0, 0%, 95%);
+}
 
 .col2{
  color: hsl(184, 100%, 22%);
 }
+.col2:hover {
+ border: 2px solid hsl(0, 0%, 95%);
+ cursor: pointer;
+ background-color: hsl(184, 100%, 22%);
+ color: hsl(0, 0%, 95%);
+}
 
 .col3{
  color: hsl(179, 100%, 13%);
+}
+.col3:hover {
+ border: 2px solid hsl(0, 0%, 95%);
+ cursor: pointer;
+ background-color: hsl(179, 100%, 13%);
+ color: hsl(0, 0%, 95%);
 }
 
 .context:nth-of-type(2){
@@ -79,8 +103,49 @@ gap: 5.5em;
 
 .context:nth-of-type(1){
  background-color: hsl(31, 77%, 52%);
+ border-radius: 0.5em 0 0 0.5em;
 }
 
 .context:nth-of-type(3){
  background-color: hsl(179, 100%, 13%);
+ border-radius: 0 0.5em 0.5em 0;
+}
+
+
+
+@media (max-width: 769px) {
+ .content{
+
+  flex-direction: column;
+  margin: 3em 1.5em;
+ }
+
+ .context{
+  flex-direction: column;
+ }
+
+ p{
+  font-size: 0.8em;
+ }
+.third-para{
+ width: 87%;
+}
+
+.text-content{
+ gap: 1.5em;
+  margin: 2em 3em;
+}
+
+.col{
+ gap: 1em;
+}
+
+  .context:nth-of-type(1) {
+   border-radius: 0.5em 0.5em 0 0;
+  }
+ 
+
+.context:nth-of-type(3) {
+ border-radius: 0 0 0.5em 0.5em;
+}
 }
