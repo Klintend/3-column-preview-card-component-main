@@ -14,7 +14,7 @@
 }
 
 .content{
- max-width: 800px;
+ max-width: 920px;
  margin: 0 auto;
  display: flex;
  flex-direction: row;
@@ -30,14 +30,17 @@ h1{
  text-transform: uppercase;
  color: hsl(0, 0%, 95%);
  font-family: 'Big Shoulders Display', cursive;
+ font-weight: 700;
+ font-size: 2em;
 }
 
 p{
- font-size: 0.9rem;
+ font-size: 0.92rem;
  line-height: 24px;
  font-weight: 400;
  color: hsl(0, 0%, 95%);
   font-family: 'Lexend Deca', sans-serif;
+ width: 85%;
 }
 
 .col{
@@ -124,10 +127,11 @@ gap: 5.5em;
  }
 
  p{
-  font-size: 0.8em;
+  font-size: 0.85em;
+  width: 94%;
  }
 .third-para{
- width: 87%;
+ width: 90%;
 }
 
 .text-content{
